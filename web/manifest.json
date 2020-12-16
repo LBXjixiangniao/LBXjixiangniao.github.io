@@ -1,6 +1,6 @@
 {
-    "name": "flutter_web",
-    "short_name": "flutter_web",
+    "name": "github_pages",
+    "short_name": "github_pages",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
