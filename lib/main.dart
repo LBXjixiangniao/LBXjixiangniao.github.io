@@ -52,7 +52,6 @@ class MyApp extends StatelessWidget {
           ),
           dividerColor: ColorHelper.DividerColor,
           scaffoldBackgroundColor: ColorHelper.BGColor),
-      home: HomePage(),
       onGenerateRoute: RouterManager.onGenerateRoute,
     );
   }
