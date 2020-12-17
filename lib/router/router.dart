@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:github_pages/router/router_handler.dart';
 
 const PAGE_WRAP_BUILDER = 'PAGE_WRAP_BUILDER';
 const ROUTE_BUILDER = 'ROUTE_BUILDER';
@@ -15,6 +16,12 @@ class RouterManager {
   ///launch页
   // static String root = "/";
   // static get rootPageBuilder => (_) => DemoList();
+
+  static Route<dynamic> onGenerateRoute(RouteSettings settings){
+    Function route = RouterHandler.handlersMap[settings.name];
+    return route?.call(settings);
+  }
+
 
   static String _routeNameForPageType(Type page) => page.toString();
 

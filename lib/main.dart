@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:github_pages/ui/home.dart';
 
+import 'router/router.dart';
 import 'styles/color_helper.dart';
 import 'styles/pingfang_textstyle.dart';
 
@@ -52,10 +53,7 @@ class MyApp extends StatelessWidget {
           dividerColor: ColorHelper.DividerColor,
           scaffoldBackgroundColor: ColorHelper.BGColor),
       home: HomePage(),
-      onGenerateRoute: (settings) {
-        print(settings);
-        return null;
-      },
+      onGenerateRoute: RouterManager.onGenerateRoute,
     );
   }
 }
