@@ -20,9 +20,9 @@ class _AVLTreeDebugPageState extends State<AVLTreeDebugPage> {
   @override
   void initState() {
     treeSet.debug = true;
-    // treeSet.debugPrintMethod = (str) {
-    //   debugStringList.add(str);
-    // };
+    treeSet.debugPrintMethod = (str) {
+      debugStringList.add(str);
+    };
     super.initState();
   }
 
