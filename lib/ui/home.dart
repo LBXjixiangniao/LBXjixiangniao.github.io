@@ -1,8 +1,10 @@
+// ignore: avoid_web_libraries_in_flutter
 import 'dart:js' as JS;
 
 import 'package:flutter/material.dart';
 import 'package:github_pages/router/router.dart';
 import 'package:github_pages/styles/color_helper.dart';
+import 'package:github_pages/ui/red_black_tree/red_black_tree.dart';
 
 import 'avl_tree/avl_tree.dart';
 
@@ -63,7 +65,14 @@ class HomePage extends StatelessWidget {
                     Navigator.push(context, RouterManager.routeForPage(page: AVLTreeDebugPage()));
                   },
                   title: Text('AVL树'),
-                  subtitle: Text('https://github.com/LBXjixiangniao'),
+                  subtitle: Text('AVL树测试验证页面'),
+                ),
+                ListTile(
+                  onTap: () {
+                    Navigator.push(context, RouterManager.routeForPage(page: RedBlackTreeDebugPage()));
+                  },
+                  title: Text('红黑树'),
+                  subtitle: Text('红黑树测试验证页面'),
                 ),
               ],
             ),

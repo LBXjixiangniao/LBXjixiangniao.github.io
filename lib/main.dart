@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:github_pages/ui/home.dart';
 
-import 'ui/avl_tree/avl_tree.dart';
 import 'styles/color_helper.dart';
 import 'styles/pingfang_textstyle.dart';
 
@@ -51,8 +51,7 @@ class MyApp extends StatelessWidget {
           ),
           dividerColor: ColorHelper.DividerColor,
           scaffoldBackgroundColor: ColorHelper.BGColor),
-      // home: HomePage(),
-      home: AVLTreeDebugPage(),
+      home: HomePage(),
       onGenerateRoute: (settings) {
         print(settings);
         return null;
